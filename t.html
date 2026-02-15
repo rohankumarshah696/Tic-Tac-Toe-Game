@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body class="bg-blue-700 flex flex-col items-center justify-center text-white">
+     <div class="absolute h-50 w-80 text-xl flex-col items-center justify-center p-5 pop gap-5 text-black bg-white hidden z-50 rounded-2xl">
+        <p id="result"></p>
+        <button class="bg-blue-500 h-10 w-30 p-2 rounded-xl cursor-pointer " id="rsltbtn">Close</button>
+        <button class= "restart rstrtpop hidden bg-blue-500 h-10 w-30 p-2 rounded-xl cursor-pointer " id="">Restart</button>
+    </div>
+    <span class="font-bold mt-5  scale-200">Tic Tac Toe</span>
+    <div class="mt-5 flex flex-col">
+    <span class="mt-5 text-2xl">Which one do you like to play first?</span>
+    <div class="flex justify-center items-center mt-2 space-x-10">
+    <button  class="bg-green-500 h-10 w-15 rounded-xl text-2xl cursor-pointer active:scale-90 choose">O</button>
+    <button class="bg-green-500 h-10 w-15  rounded-xl text-2xl cursor-pointer active:scale-90 choose">X</button>
+    </div>
+    </div>
+    <div class=" h-50 w-50 mt-10 grid grid-cols-3 grid-rows-3 divide-x-4 divide-y-4 divide-amber-800">
+        <div class=" inputs"></div>
+        <div class=" inputs"></div>
+        <div class="right0 inputs"></div>
+        <div class=" inputs"></div>
+        <div class=" inputs"></div>
+        <div class="right0 inputs"></div>
+        <div class="bottom0 inputs"></div>
+        <div class="bottom0 inputs"></div>
+        <div  class=" inputs"></div>
+    </div>
+     <button id="" class="restart mt-15 bg-yellow-600 text-2xl font-bold text-black h-10 w-25 rounded-xl">Restart</button>
+    <script src="t.js"></script>
+</body>
+</html>

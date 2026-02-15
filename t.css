@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.right0{
+    border-right: 0;
+}
+
+.bottom0{
+    border-bottom: 0;
+}
+
+.inputs{
+    cursor: pointer;
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
